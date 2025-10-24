@@ -1,0 +1,11 @@
+services:
+  app:
+    image: ardinii/web-hextris-images
+    build: .
+    ports:
+      - "8082:80"
+    volumes:
+      - nginx-vol:/var/www/html/
+
+volumes:
+  nginx-vol:
